@@ -1,0 +1,50 @@
+
+var onRun = function(context) {
+    var doc = context.document;
+    var selectedLayers = context.selection;
+    var selectedCount = selectedLayers.count();
+    var artboards = doc.currentPage().artboards();
+    var selectedArtboard = doc.currentPage().currentArtboard();
+    var masterName = ':c2all';
+    var targetArtboard;
+
+    for (var j = 0; j < selectedCount; j++) {
+        var layer = selectedLayers[j];
+        deletePreviousCopies(layer);
+
+        for (var i = 0; i < [artboards count]; i++) {
+            var artboard = artboards[i];
+            var artboardName = [artboard name];
+            if (artboard != selectedArtboard) {
+                targetArtboard = artboard;
+                copySelectionToNewArtboard(layer, targetArtboard);
+            }
+        }
+    }
+
+    function copySelectionToNewArtboard(selectedItem, newArtboard) {
+        selectedItemCopy = [selectedItem duplicate];
+        var newName = selectedItemCopy.name();
+        selectedItemCopy.setName(newName+masterName);
+        [[newArtboard layers] addObject: selectedItemCopy];
+        parentGroup = [selectedItem parentGroup];
+        [parentGroup removeLayer: selectedItemCopy];
+    }
+
+    function deletePreviousCopies(selectedItem) {
+        var layerName = selectedItem.name()+masterName;
+        var artb;
+
+        for (var i = 0; i < [artboards count]; i++) {
+        artb = artboards[i];
+        allLayers = [artb layers];
+
+          for(var j=0; j< [allLayers count]; j++){
+            var layer = [allLayers objectAtIndex:j];
+            if ([layer name] == layerName) {
+              [layer removeFromParent];
+            }
+          }
+        }
+    }
+};

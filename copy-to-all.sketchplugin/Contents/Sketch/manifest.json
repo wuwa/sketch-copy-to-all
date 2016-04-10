@@ -1,0 +1,25 @@
+{
+  "author" : "Ben Benhorin",
+  "commands" : [
+    {
+      "script" : "copytoall.cocoascript",
+      "handler" : "onRun",
+      "shortcut" : "command alt a",
+      "name" : "Copy 2 All",
+      "identifier" : "copy-to-all"
+    }
+  ],
+  "menu" : {
+    "isRoot": true,
+    "items" : [
+      "copy-to-all"
+    ],
+    "title" : "copy-to-all"
+  },
+  "identifier" : "com.wuwacorp.sketch.copytoall",
+  "version" : "1.0",
+  "description" : "A small sketch command to copy items to all artboards and re-update them as well",
+  "authorEmail" : "ben@wuwa.org",
+  "name" : "copy-to-all"
+}
+
