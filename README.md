@@ -1,11 +1,11 @@
-# Sketch Plugin - CopytoAll
+# Sketch Plugin - Copy 2 All
 
 Sketch plugin to copy layers/groups/symbols to all artboards (except the one where the original item is already).
 
 # Usage
 
 This plugin will copy the current selected items to all other artboards, and place them exactly at the same spot.
-Just navigate to Plugins > CopytoAll or use the keyboard shortcut ```⌘``` + ```⌥``` + ```a```
+Just navigate to Plugins > Copy 2 All or use the keyboard shortcut ```⌘``` + ```⌥``` + ```a```
 
 ![alt text](http://wuwa.github.com/copy2all.gif "demo")
 
