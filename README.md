@@ -1,6 +1,6 @@
 # Sketch Plugin - CopytoAll
 
-Sketch plugin to copy layers/groups/symbols to all artboards (excpet the one where the original item is already).
+Sketch plugin to copy layers/groups/symbols to all artboards (except the one where the original item is already).
 
 # Usage
 
