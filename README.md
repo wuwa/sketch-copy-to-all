@@ -1,6 +1,6 @@
 # Sketch Plugin - Copy 2 All
 
-Sketch plugin to copy layers/groups/symbols to all artboards (except the one where the original item is already).
+Sketch plugin to copy layers/groups/symbols to all artboards, and keep a connection between the original item and it's copies.
 
 # Usage
 
@@ -12,7 +12,7 @@ Just navigate to Plugins > Copy 2 All or use the keyboard shortcut ```⌘``` + `
 Once you used it on any item, that item will become the 'master' of that series of copies - so if you will use the ```⌘``` + ```⌥``` + ```a``` once again, it will update all copies to the new looks and position of the 'master'.
 This connection is defined by a suffix (:c2all) that is added automatically to the copied layer name, so you can rename the copies to cancel this connection. BTW - please make sure all your original items on the master artboard have unique names. 
 
-This 'super smart' connection can be very helpful if you make an artboard and treat it as a master-page for all others.
+This 'super smart' connection can be very helpful if you make an artboard and treat it as a master page for all others.
 Otherwise it might get sloppy...
 
 # Installation
