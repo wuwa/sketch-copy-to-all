@@ -1,6 +1,7 @@
 # Sketch Plugin - Copy 2 All
 
-Sketch plugin to copy layers/groups/symbols to all artboards, and keep a connection between the original item and it's copies.
+Sketch plugin to copy layers/groups/symbols to all artboards, and keep a connection between the original item and its copies.
+In other words - it is meant to help with a 'master page' approach.
 
 # Usage
 
