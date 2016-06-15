@@ -6,6 +6,7 @@ var onRun = function(context) {
     var artboards = doc.currentPage().artboards();
     var selectedArtboard = doc.currentPage().currentArtboard();
     var masterName = ':c2all';
+    var skipName = ':c2skip';
     var targetArtboard;
 
     for (var j = 0; j < selectedCount; j++) {
@@ -15,7 +16,7 @@ var onRun = function(context) {
         for (var i = 0; i < [artboards count]; i++) {
             var artboard = artboards[i];
             var artboardName = [artboard name];
-            if (artboard != selectedArtboard) {
+            if (artboard != selectedArtboard && !/:c2skip$/.test(artboardName)) {
                 targetArtboard = artboard;
                 copySelectionToNewArtboard(layer, targetArtboard);
             }
