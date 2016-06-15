@@ -16,6 +16,8 @@ This connection is defined by a suffix (:c2all) that is added automatically to t
 This 'super smart' connection can be very helpful if you make an artboard and treat it as a master page for all others.
 Otherwise it might get sloppy...
 
+New feature - if you want to skip some artboards (meaning to *NOT COPY TO* them) add ':c2skip' to the end of the artboard name - for example MyAwesomeArtboard:c2skip
+
 # Installation
 
 - Download the latest release and unzip it.
