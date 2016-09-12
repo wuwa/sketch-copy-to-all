@@ -27,9 +27,9 @@ var onRun = function(context) {
         selectedItemCopy = [selectedItem duplicate];
         var newName = selectedItemCopy.name();
         selectedItemCopy.setName(newName+masterName);
-        [[newArtboard layers] addObject: selectedItemCopy];
+        newArtboard.addLayers([selectedItemCopy]);
         parentGroup = [selectedItem parentGroup];
-        [parentGroup removeLayer: selectedItemCopy];
+        [parentGroup removeLayer:selectedItemCopy];
     }
 
     function deletePreviousCopies(selectedItem) {
